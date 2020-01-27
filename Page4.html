@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Page 4</title>
+  </head>
+  <body>
+    <h1>My Fourth Page</h1>
+
+    <select id="animal-selector">
+      <option value="cat">Cat</option>
+      <option value="dog">Dog</option>
+      <option value="lion">Lion</option>
+    </select>
+
+    <script>
+
+      // FYI: this is JavaScript
+      console.log("HELLO FROM THE FOURTH PAGE!")
+
+      // access the select element from the DOM by specifying its unique identifier
+      var animalSelector = document.getElementById("animal-selector")
+
+      // define a click event handler function
+      function logSelectedAnimal(){
+        console.log("YOU SELECTED:", animalSelector.value)
+      }
+
+      // register the click event handler function to the button's click event
+      animalSelector.addEventListener("change", logSelectedAnimal, false)
+
+    </script>
+  </body>
+</html>

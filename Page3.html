@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Material Design Icons -->
+    <!-- see: http://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+      .material-icons.md-18 { font-size: 18px; }
+    </style>
+
+    <title>Page 3</title>
+  </head>
+  <body>
+    <h1>My Third Page</h1>
+
+    <!-- see: https://getbootstrap.com/docs/4.4/components/buttons/ -->
+    <!-- see: https://material.io/resources/icons/?icon=shopping_cart&style=outline -->
+    <button id="my-awesome-btn" type="button" class="btn btn-primary">
+      Click Me <i class="material-icons md-18">shopping_cart</i>
+    </button>
+
+    <script>
+
+      // FYI: this is JavaScript
+
+      console.log("HELLO FROM THE THIRD PAGE!")
+
+      var clickCount = 0
+
+      // access the button element from the DOM by specifying its unique identifier
+      var myBtn = document.getElementById("my-awesome-btn")
+
+      // define a click event handler function
+      function myBtnClick() {
+        clickCount = clickCount + 1
+        console.log("YOU CLICKED ME", clickCount, "TIMES! :-)")
+      }
+
+      // register the click event handler function to the button's click event
+      myBtn.addEventListener("click", myBtnClick, false)
+
+    </script>
+  </body>
+</html>

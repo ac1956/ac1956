@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page 2</title>
+  </head>
+  <body>
+    <h1>My Second Page</h1>
+
+    <div id="my-container">
+      <p id="my-message">some placeholder content</p>
+    </div>
+
+    <script>
+
+      // FYI: this is JavaScript
+      console.log("HELLO FROM THE SECOND PAGE!")
+
+      // select elements from the DOM by specifying their unique identifiers:
+      var myDiv = document.getElementById("my-container")
+      var myParagraph = document.getElementById("my-message")
+
+      // manipulate properties of an element:
+      myParagraph.innerHTML = "Fun times!"
+      myParagraph.style.color = "red"
+
+      // can even create new elements:
+      var myHeading = document.createElement("h3")
+      myHeading.innerHTML = "This is a heading"
+      myDiv.appendChild(myHeading)
+
+    </script>
+  </body>
+</html>
