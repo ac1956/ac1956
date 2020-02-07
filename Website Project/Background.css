@@ -30,7 +30,7 @@ body
           {
               font-size: 60px;
               font-weight: 700;
-              letter-spacing: 8px;
+              letter-spacing: 5px;
               animation: text 3s 1;
               font-family: sans-serif;
           }
@@ -39,16 +39,16 @@ body
           {
             0%
             {
-                margin-bottom: -40px;
+                opacity: 0.1;
             }
             30%
             {
-                letter-spacing: 25px;
-                margin-bottom: -40px;
-            }
-            85%
-            {
+                opacity: 0.3;
                 letter-spacing: 8px;
-                margin-bottom: -40px;
+            }
+            100%
+            {
+                opacity: 1;
+                letter-spacing: 5px;
             }
           }
