@@ -1,0 +1,14 @@
+body
+        {
+            background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://i.ibb.co/b50vYtD/ps852pl0iqwz.jpg');
+            background-attachment: fixed; 
+            background-size: 100% 100%;
+        }
+        @media only screen and (max-width: 400px) 
+        {
+            body { 
+                background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://i.ibb.co/JpM2pZP/270fe275e11827411c83d13331edd90d.jpg'); 
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+            }
+          }
