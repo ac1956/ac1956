@@ -1,0 +1,15 @@
+body
+        {
+            background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('https://i.ibb.co/h723XtL/Adobe-Stock-122640615.jpg');
+            background-attachment: fixed; 
+            background-size: cover;
+        }
+
+        @media only screen and (max-width: 400px) 
+        {
+            body { 
+                background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://i.ibb.co/MRPvr5H/cf430dc99d9a02e9a2f4e25a0d972e35.jpg'); 
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+            }
+          }
