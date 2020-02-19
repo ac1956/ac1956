@@ -1,0 +1,30 @@
+.navbar {
+    min-height: 100px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 25px;
+}
+
+.navbar-nav {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 20px;
+    padding: 5px 10px !important;
+    font-size: 25px;
+}
+
+
+/* .navbar .brand,
+.navbar .nav>li>a:hover {
+    background-color: white;
+    opacity: 0.7;
+} */
+
+.navbar-inverse .brand,
+.navbar-inverse .nav>li>a:hover {
+    background-color: white;
+    opacity: 0.7;
+}
