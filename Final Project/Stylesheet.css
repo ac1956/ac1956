@@ -1,5 +1,11 @@
-.navbar {
+/* .navbar {
     min-height: 100px;
+} */
+
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
 }
 
 .navbar-brand {
@@ -17,14 +23,27 @@
 }
 
 
-/* .navbar .brand,
-.navbar .nav>li>a:hover {
-    background-color: white;
-    opacity: 0.7;
-} */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 
-.navbar-inverse .brand,
-.navbar-inverse .nav>li>a:hover {
-    background-color: white;
-    opacity: 0.7;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
