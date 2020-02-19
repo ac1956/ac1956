@@ -4,11 +4,11 @@
         };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.getElementById("navbar").style.padding = "25px 10px";
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+                document.getElementById("navbar2").style.padding = "25px 10px";
                 document.getElementById("logo").style.fontSize = "25px";
             } else {
-                document.getElementById("navbar").style.padding = "80px 10px";
+                document.getElementById("navbar2").style.padding = "40px 10px";
                 document.getElementById("logo").style.fontSize = "35px";
             }
         }
