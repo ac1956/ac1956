@@ -1,5 +1,5 @@
 * {box-sizing: border-box}
-  input[type=text], input[type=password] {
+  input[type=text1], input[type=text2], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -7,10 +7,17 @@
   border: none;
   background: #f1f1f1;
 }
-input[type=text]:focus, input[type=password]:focus {
+input[type=text1]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
+input[type=text2]
+{background-color: #ddd;
+    outline: none;
+}
+.text2:invalid {
+    border-color: red;
+  }
 button {
   background-color: rgb(8, 95, 11);
   color: white;
