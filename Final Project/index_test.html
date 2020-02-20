@@ -2,44 +2,37 @@
 <html lang="en">
 
 <head>
-    <title>Georgetown News</title>
+    <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Style2.css">
-    <script type="text/javascript" src="Navbar.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <h2>Scroll Down</h2>
-        <p>Scroll down to see the sticky effect.</p>
-    </div>
-    <!-- <nav class="navbar-inverse navbar-default navbar-fixed-top" style="background-color: rgb(24, 3, 65);" ; "> -->
-    <!-- <nav class="navbar  navbar-toggleable-md navbar-inverse " float="left" style="background-color: rgb(24, 3, 65);"> -->
-    <nav class="navbar">
-        <div class="navbar-header ">
-            <a class="navbar-brand " href="Index.html ">HOYA NEWS</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right ">
-            <li><a href="Index.html ">HOME</a></li>
-            <li><a href="# ">BUSINESS</a></li>
-            <li><a href="#tour ">ENTERTAINMENT</a></li>
-            <li><a href="#contact ">SPORTS</a></li>
-            <li><a href="#contact ">TECHNOLOGY</a></li>
-            <li><a href="#contact ">SIGN UP/LOGIN</a></li>
-            <li><a href="# "><span class="glyphicon glyphicon-search "></span></a></li>
-        </ul>
-        </div>
-    </nav>
 
-    <div class="container">
-        <img src="file:///Users/ashwin/Downloads/airbnb-news-stockmarket.png" alt="Italian Trulli">
-    </div>
+    <div class="container-fluid">
+        <h1>Responsive Auto Layout Columns</h1>
+        <p>In Bootstrap 4, there is an easy way to create equal width columns: just use the <code>.col-md</code> class on a specified number of col elements. Bootstrap will recognize how many columns there are, and each column will get the same width.</p>
+        <p>If the screen size is <strong>less than 768px</strong>, the columns will stack horizontally.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md bg-success">1 of 2</div>
+                <div class="col-md bg-warning">2 of 2</div>
+            </div>
+        </div>
+        <br>
 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md " style="margin-right: 15px;">1 of 4</div>
+                <div class="col-md " style="margin-right: 15px;">2 of 4</div>
+                <div class="col-md">3 of 4</div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

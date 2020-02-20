@@ -6,6 +6,7 @@
         function scrollFunction() {
             if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
                 document.getElementById("navbar2").style.padding = "25px 10px";
+                document.getElementById("navbar2").style.opacity = 0.7;
                 document.getElementById("logo").style.fontSize = "25px";
             } else {
                 document.getElementById("navbar2").style.padding = "40px 10px";

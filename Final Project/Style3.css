@@ -5,12 +5,13 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 249, 249);
 }
 
 #navbar {
     overflow: hidden;
     background-color: rgb(24, 3, 65);
-    padding: 80px 10px;
+    padding: 30px 10px;
     transition: 0.4s;
     position: fixed;
     width: 100%;
@@ -111,7 +112,8 @@ body {
 }
 
 .flex-grid-thirds .col {
-    width: 32%;
+    overflow: hidden;
+    width: 24%;
 }
 
 @media (max-width: 400px) {
@@ -131,11 +133,47 @@ body {
 }
 
 .col {
-    background: lightgray;
-    padding: 20px;
+    background: white;
+    /* padding: 20px; */
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 4px 4px rgb(212, 211, 211);
 }
 
 .flex-grid {
     display: -webkit-box;
     display: flex;
+}
+
+.box {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    min-height: 200px;
+    width: 50vw;
+    margin: 100px auto;
+    background: white;
+    border-radius: 5px;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+div {
+    font-family: 'Playfair Display', serif;
 }
