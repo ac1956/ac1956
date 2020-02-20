@@ -107,6 +107,7 @@ body {
 .flex-grid-thirds {
     display: -webkit-box;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
@@ -172,6 +173,7 @@ div {
 h4 {
     text-align: left;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .font1 {
@@ -184,4 +186,13 @@ h4 {
 
 .spacing {
     padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.current {
+    margin-top: 20px;
 }
